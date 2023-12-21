@@ -1,20 +1,20 @@
 let box1 = document.querySelector(".container1");
-box1.style.backgroundColor = "green";
+box1.style.backgroundColor = "black";
 
 let box2 = document.querySelector(".container2");
-box2.style.backgroundColor = "green";
+box2.style.backgroundColor = "black";
 
 let box3 = document.querySelector(".container3");
-box3.style.backgroundColor= "green";
+box3.style.backgroundColor= "black";
 
 let box4= document.querySelector(".container4");
-box4.style.backgroundColor ="green";
+box4.style.backgroundColor ="black";
 
 let box5= document.querySelector(".container5");
-box5.style.backgroundColor ="green";
+box5.style.backgroundColor ="black";
 
 let box6= document.querySelector(".container6");
-box6.style.backgroundColor ="green";
+box6.style.backgroundColor ="black";
 
 let box7 = document.querySelector(".container7");
 box7.style.backgroundColor = "red";
@@ -160,7 +160,7 @@ async function random() {
   },19000)
 
   setTimeout(()=>{
-    box7.innerHTML = document.querySelector(".container7").innerHTML +"You are Hacked";
+    box7.innerHTML = document.querySelector(".container7").innerHTML +"YOU HAVE BEEN HACKED";
     
 
     audio.play().then(()=>{
