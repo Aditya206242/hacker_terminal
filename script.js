@@ -21,6 +21,9 @@ box7.style.backgroundColor = "red";
 
 let audio = document.getElementById("hackaudio");
 
+let button = document.querySelector(".exit-btn");
+
+
 
 
 
@@ -165,6 +168,10 @@ async function random() {
     }).catch((error)=>{
         console.log(error.message)
     })
+
+    
+    button.innerHTML = document.querySelector(".exit-btn").innerHTML +"Exit"
+    
     
 
   },19000)
@@ -182,8 +189,18 @@ async function call() {
   // await random();
   await random();
   
+  // button.addEventListener("click",()=>{
+  //     button.style.backgroundColor="green";
+  // })
+  
 }
 call()
+button.addEventListener("click",()=>{
+  audio.play();
+  button.style.backgroundColor="red";
+})
+
+
 
 
 
